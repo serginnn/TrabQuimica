@@ -5,7 +5,7 @@ from tkinter import messagebox
 def descobrir_massa_molar(entrada_massa_molar):
     try:
         elemento = entrada_massa_molar.get()
-        result = Formula(elemento)
+        result = Formula(elemento)  
         massa_molar = result.mass
         messagebox.showinfo("Massa Molar", f"{massa_molar:.2f} g/mol")
     except Exception as e:
